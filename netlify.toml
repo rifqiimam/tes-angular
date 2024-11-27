@@ -1,0 +1,11 @@
+[build]
+  # Directory to publish
+  publish = "dist/first-project-angular/browser" 
+  # Command to build the app
+  command = "ng build --prod"
+
+[[redirects]]
+  # Redirect all requests to the index.html file (for SPA routing)
+  from = "/*"
+  to = "/index.html"
+  status = 200
